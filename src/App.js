@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter,Switch, Route } from 'react-router-dom';
+import {Switch, Route } from 'react-router-dom';
 import './App.css';
 import ShopPage from './pages/shop/shop.component';
 
@@ -49,7 +49,7 @@ class App extends React.Component {
 
     render() {
     return (
-      <BrowserRouter>
+      
       <div>
         <Header currentUser={this.state.currentUser} />
       <Switch> 
@@ -59,7 +59,7 @@ class App extends React.Component {
        </Switch>
        
       </div>
-      </BrowserRouter>
+     
       
     );
 
